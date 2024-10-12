@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+.wrapper {
+    background-image: url(img/bild1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    background-color: rgb(41, 19, 66);
+}
+
+.left h1 {
+    color: #fff;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #e1e1e1;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.links {
+    padding: .4rem 0.8rem;
+    border: 2px  solid rgb(41, 19, 66);  
+    border-radius: 5px;
+}
+
+.links:hover {
+    color: #9a9a9a;
+    border: 2px  solid #9a9a9a;
+    border-radius: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.container {
+background: rgba(255, 226, 226, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+border: 1px solid rgba(255, 226, 226, 0.45);    
+
+padding: 1.4rem;
+text-align: center;
+transition: 0.5s;
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+.container p {
+    font-size: 1.3rem;
+}
+
+.container:hover{
+    transform: scale(1.05);
+}
+
+img{
+    width: 100%;
+}
+
+.link-amazon {
+    border: 4px rgb(255, 133, 41)  solid;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+}
+
+.link-amazon:hover,
+.link-amazon:active {
+    border: 4px rgb(255, 133, 41)  solid;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+}
+
+.amazon-ptagg {
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 375px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        text-align: center;
+    }
+    .right a {
+        font-size: 0.5rem;
+    }
+    .container p {
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    .navigation {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1rem;
+        text-align: center;
+    }
+    .right {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .right a {
+        font-size: 0.7rem;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    .container {
+        transition: 0.5s;
+    }
+    .container:hover{
+        transform: scale(1.04);
+    }
+    .container h1{
+        font-size: 1rem;
+    }
+    .container p{
+        font-size: 0.8rem;
+    }
+    .link-amazon {
+        font-size: 1rem;
+    }
+    
+}
+@media (min-width: 481px) and  (max-width: 768px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 1rem;
+        text-align: center;
+    }
+    .left a {
+        font-size: 1.7rem;
+    }
+    .right {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .right a {
+        font-size: 1.2rem;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    .container {
+        transition: 0.5s;
+    }
+    .container:hover{
+        transform: scale(1.05);
+    }
+    .container h1{
+        font-size: 1.2rem;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+    .link-amazon {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and  (max-width: 1280px) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left a {
+        font-size: 2rem;
+    }
+    .right {
+        display: flex;
+    }
+    .right a {
+        font-size: 1.2rem;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container {
+        transition: 0.5s;
+    }
+    .container:hover{
+        transform: scale(1.03);
+    }
+    .container h1{
+        font-size: 1.2rem;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+    .link-amazon {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1280px) and  (max-width: 1650px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
